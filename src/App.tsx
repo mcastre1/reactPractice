@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import { NavBar } from "./components/NavBar";
 import { ThreeLinkContent } from "./components/ThreeLinkContent";
 import { VideoDesc } from "./components/VideoDesc";
+import { IconDesc } from "./components/IconDesc";
+import { ButtonsDesc } from "./components/ButtonsDesc";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <div className="vh-85">
         <div className="container-fluid w-100 h-40">
           <div className="row">
-            <div className="col-sm m-4 border rounded bg-light">first</div>
+            <div className="col-sm m-4 border rounded bg-light">
+              <IconDesc desc="Collaborate, call, and set online customer meetings with Microsoft Teams"></IconDesc>
+            </div>
             <div className="col-sm m-4 border rounded bg-light">
               <ThreeLinkContent
                 header="Learn about Licensing"
@@ -24,7 +28,9 @@ function App() {
                 third_desc="Sales Hub"
               ></ThreeLinkContent>
             </div>
-            <div className="col-sm m-4 border rounded bg-light">third</div>
+            <div className="col-sm m-4 border rounded bg-light">
+              <ButtonsDesc></ButtonsDesc>
+            </div>
           </div>
         </div>
         <div className="container-fluid w-100 h-60">
